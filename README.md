@@ -171,3 +171,17 @@ After completing this lab, you will:
 ✅ Return proper HTTP status codes and structured responses  
 
 This is a critical step in your backend developer journey. Next up: persistent databases!
+
+---
+
+## Developer Notes
+
+- Built a full CRUD RESTful API for managing Event objects.
+- Used an in-memory list to simulate a database.
+- Implemented:
+  - `POST /events` to create a new event (returns 201 Created)
+  - `PATCH /events/<id>` to update an existing event (returns 200 or 404)
+  - `DELETE /events/<id>` to remove an event (returns 204 or 404)
+- Used `request.get_json()` to work with incoming JSON data.
+- Returned responses using `jsonify()` and proper HTTP status codes.
+
